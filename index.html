@@ -1,58 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Satellites</title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Satellites</title>
+	<link rel="stylesheet" href="styles/reset.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Satellites</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Starlink</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Weaponry & Defense</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Spatial ecology</a>
-                  </li>
-              </ul>
-            </div>
-          </nav>
-    </header>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Satellites</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-    <main>
-        <section class="description">
-            <h1 class="text-center">What is a satellite ?</h1>
-            <div>
-                <p>- It's a celestial body orbiting the earth or another planet.</p>
-                <p>- It's an artificial body placed in orbit round the earth or moon or another planet in order to collect information or for communication.</p>
-            </div>
-        </section>
-        <section>
-            <h2 class="text-center">How does it works ?</h2>
-            <div>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Starlink</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Weaponry & Defense</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Spatial ecology</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
 
-            </div>
-            <!-- Schema / Animate object ? -->
-            <div></div>
-        </section>
-    </main>
+	<main>
+		<section class="description">
+			<h1 class="text-center">What is a satellite ?</h1>
+			<div>
+				<p>- A celestial body orbiting the earth or another planet.</p>
+				<p>- An artificial body placed in orbit round the earth or moon or another planet in order to
+					collect information or for communication.</p>
+			</div>
+		</section>
+		<section>
+			<h2 class="text-center">How does it works ?</h2>
+			<div>
+				<p>Firstly, a satellite doesn't fly. It just fall constantly around the Earth. It's easy to explain : if
+					you throw a stone, it will follow a parabola which lead to
+					the ground, or if we want to be specific, to the center of Earth. When we reach a specific speed
+					defined by the distance satellite/earth (cf Kepler laws), the satellite will
+					follow the curve of Earth. To avoid the satellite to fall while losing speed due to friction with
+					air particles, we need it to be over the atmosphere, where there is no
+					friction force. At this altitude, there is no need to use any energy to maintain his movement. For
+					example, the ISS which is close to earth, need every month to
+					use some air to go up and keep a good distance and speed due to friction.
+				</p>
+				<div>
+					<p>
+						Secondly, I will explain differents orbits and how do they work <br>
+						Low Earth orbit (LEO) : Geocentric orbits ranging in altitude from 180 km – 2,000 km (1,200
+						mi).<br>
+						Medium Earth orbit (MEO) : Geocentric orbits ranging in altitude from 2,000 km (1,200 mi) –
+						35,786
+						km (22,236 mi). Also known as an intermediate circular orbit.<br>
+						Geostationnary Earth Orbit (GEO) : Geocentric circular orbit with an altitude of 35,786
+						kilometres
+						(22,236 mi).
+						The period of the orbit equals one sidereal day, coinciding with the rotation period of the
+						Earth.
+						The speed is 3,075 metres per second (10,090 ft/s).
+						This orbit is used by communication & TV satellites.<br>
+						High Earth orbit (HEO): Geocentric orbits above the altitude of geosynchronous orbit 35,786 km
+						(22,236 mi).
+					</p>
+					<img src="sources/orbits.png" alt="Schema of differents orbits">
+				</div>
+			</div>
+		</section>
+		<section>
+			<h2>Project Starlink</h2>
+			<h3>Explanation</h3>
+			<div>
+				<p>The project Starlink's purpose is to grant access to Internet for everyone, everywhere on Earth.
+					Nowadays, there is 5% of the population who don't have any internet access</p>
+				<p>How ? the project is about to launch 42 000 satellites to create a constellation of satellites. <br>
+					In space, the solar-powered, 500-pound satellites communicate with one another through both optical
+					and
+					radio links; the entire network will then be connected with user terminals on the ground that can be
+					installed basically anywhere with a view of the sky. With a large enough array of satellites passing
+					overhead, internet service should be continually available, unlike the delays in connectivity that
+					are common with current Iridium satellites and other networks.
+				</p>
+				<p>
+					As well, SpaceX says each satellite will be “capable of tracking on-orbit debris and autonomously
+					avoiding collision,” and that 95 percent of the satellites’ components will quickly disintegrate in
+					Earth’s atmosphere during de-orbit at the ends of their lifetimes.</p>
+				<p>In april 2018, there was 1 600 satellites over the world. Two years after, this amount just double
+					due to this project.</p>
+			</div>
+			<h3>Controversy & problems</h3>
+			<div>
+				<div>
+					<p>Firstly, despite Musk’s initial assurances that the satellites will be barely noticeable, the
+						train of spacecraft has been captured marching across skies around the globe, and some online
+						tracking services can even calculate when and where someone can spot them sailing by overhead.
+					</p>
+					<img src="sources/starlink.png" alt="Starlink constellation visible on space">
+				</div>
+				<p>Astronomers have also raised concerns about the constellations’ effect on ground-based astronomy and
+					how the minifridge-size satellites will add to an already jammed orbital environment.</p>
+				<p>
+					Like the Iridium satellites that preceded them, Starlink satellites can sometimes “flare” if their
+					solar arrays are angled just right to throw a burst of reflected sunlight toward Earth, briefly
+					boosting their apparent brightness to potentially rival Venus or Jupiter.
+				</p>
+				<p>And even these revised estimates, which are based on the satellite’s final orbital altitudes and
+					inclinations, suggest that they’ll be visible to unaided eyes from very dark sites.</p>
+				<p>
+					However, despite his initial insistence that Starlink’s components will be invisible and
+					unproblematic for
+					astronomy, Musk has said he’s directed his team to <span>think about ways of reducing Starlink’s
+						reflectivity, or albedo.</span>
+				</p>
+			</div>
+			<h3>What about legal approval ?</h3>
+			<div>
+				<p>I will begin with the contextual background. If there is a problem with Starlink, it's not Musk's
+					fault, it's on the country which allow the launch of these satellites to give a report on it</p>
+				<p>SpaceX has already received approval from the International Telecommunications Union and the U.S.
+					Federal Communications Commission to launch a total of 11,943 satellites. And assuming the Federal
+					Aviation Administration continues to grant launch licenses for rockets with Starlink satellites on
+					board, there’s no regulatory machinery in place to prevent the company from seeing its strategy
+					through to completion.</p>
+				<p>To be fair, SpaceX is not the only company with plans to assemble clouds of space-based internet
+					satellites. Among those, Amazon is planning its 3,000 satellite-strong Project Kuiper, and OneWeb
+					(which has already launched six satellites) intends to eventually send as many as 2,000 spacecraft
+					into orbit.</p>
+			</div>
+		</section>
+		<section>
+			<h2>Militarisation of space</h2>
+			<div>
+				<p>The militarisation of space involves the placement and development of weaponry and military
+					technology in outer space. The early exploration of space in the mid-20th century had, in part, a
+					military motivation, as the United States and the Soviet Union used it as an opportunity to
+					demonstrate ballistic-missile technology and other technologies having the potential for military
+					application.</p>
+				<p>By the end of the 1960s, both countries regularly deployed satellites. Reconnaissance satellites were
+					used by militaries to take accurate pictures of their rivals' military installations. As time passed
+					the resolution and accuracy of orbital reconnaissance alarmed both sides of the iron curtain. Both
+					the United States and the Soviet Union began to develop anti-satellite weapons to blind or destroy
+					each other's satellites. Directed-energy weapons, kamikaze-style satellites, as well as orbital
+					nuclear explosives were researched with varying levels of success. Spy satellites were, and continue
+					to be, used to monitor the dismantling of military assets in accordance with arms control treaties
+					signed between the two superpowers. To use spy satellites in such a manner is often referred to in
+					treaties as "national technical means of verification"</p>
+				<p>
+					The superpowers developed ballistic missiles to enable them to use nuclear weaponry across great
+					distances. As rocket science developed, the range of missiles increased and intercontinental
+					ballistic missiles (ICBM) were created, which could strike virtually any target on Earth in a
+					timeframe measured in minutes rather than hours or days. To cover large distances ballistic missiles
+					are usually launched into sub-orbital spaceflight.
+				</p>
+				<p>The year after the first satellite was launch, URSS tried to destroy one satellite with an
+					earth-space missile, they missed but they were satisfied about this launch</p>
+				<p>Nowadays, 4 country have already destroyed a satellite like that : China, USA, Russia & India</p>
+				<p>However, destroying satellites with missile cause a big problem : there is many debris which stay in
+					space, which can cause many problems to others satellites, or more recently
+					the ISS's astronauts must cancel an outside mission because of debris caused by the destruction of a
+					russian satellite.
+				</p>
+			</div>
+		</section>
+		<section>
+			<h2>Spatial debris & ecology</h2>
+			<div>
+				<div>
+					<p>Since 1957, the begining of space age, tons of launchers, vehicles and instuments has been sent
+						into space. We had no relative informations about what to do with this objects at the end of
+						their lives. We decided to ignore it and let them derive into space.
+						Their number keep increasing, which cause many explosions and collisions, creating bilions of
+						spatial debris.
+						<img src="sources/Distribution_of_space_debris_around_Earth.gif"
+							alt="Modelisation of spatial debris around earth, gif">
+					</p>
+				</div>
+				<p>For these reasons, some law appeared to ensure that we will reduce space debris. Formerly, we did
+					use all the fuel and when there was no fuel left, we just left it where it was. <br>
+					These days, we need to keep enough fuel to ensure a satellite will be ejected from his orbit.
+					For a geostationary satellite, they eject it far away in the space. For a satellite in
+					geocentric orbit, it will fall on earth and get burned by the atmosphere.
+				</p>
+				<p>There is a list of international norms & directives to follow :</p>
+				<ul>
+					<li>Build launchers and space vehicle to avoid them to lose parts (when launch and during his
+						operation)</li>
+					<li>Prevent explosion while liberating energy, to be sure a vehicle becomes passiv</li>
+					<li>When a mission is over, use the last fuel to quit orbits</li>
+					<li>Avoid collisions in space while chosing conscientiously their orbits and performing avoiding
+						collisions process </li>
+				</ul>
+				<p>Actually, there is approximatively 9 600 tons of debris, 36 500 are more than 10cm, 1 million are
+					between 10cm and 1cm, and 330 millions between 1cm and 1 mm</p>
+				<p>
+					To try to reduce this amount, some enterprise are working on a system with hook and net to catch
+					debris and bring back on earth. <br>
+					They also created some repair satellites, which can go near a satellite and repair it if necessary.
+				</p>
+			</div>
+		</section>
+	</main>
 
-    <footer></footer>
+	<footer></footer>
 </body>
+
 </html>
