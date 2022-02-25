@@ -1,0 +1,53 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: Montserrat,sans-serif;
+}
+
+h1, h2 {
+    font-weight: bold !important;
+}
+
+p, a, li, ul {
+    font-family: 'Nunito Sans',sans-serif;
+}
+
+main {
+    padding:10px;
+}
+
+main section {
+    margin-bottom: 15px;
+}
+
+main .description  p {
+    margin-bottom: 0px;
+}
+
+main section .img-ctn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #work figure {
+    width: 300px;
+}
+
+main #work img {
+    width: 300px;
+}
+
+main .info-schema {
+    font-weight: bold;
+}
+
+main #starlink .img-ctn {
+    padding: 10px 0px;
+}
+
+main #starlink img {
+    width: 350px;
+}
+
+main section:last-of-type .img-ctn {
+    padding: 10px 0px;
+}

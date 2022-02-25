@@ -6,7 +6,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Satellites</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="styles/reset.css">
+	<link rel="stylesheet" href="styles/index.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -23,16 +28,19 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="#description">Definition<span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Starlink</a>
+						<a class="nav-link" href="#work">How does it work</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Weaponry & Defense</a>
+						<a class="nav-link" href="#starlink">Starlink</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Spatial ecology</a>
+						<a class="nav-link" href="#militarisation">Militarisation of space</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#ecology">Spatial ecology</a>
 					</li>
 				</ul>
 			</div>
@@ -40,7 +48,7 @@
 	</header>
 
 	<main>
-		<section class="description">
+		<section class="description" id="description">
 			<h1 class="text-center">What is a satellite ?</h1>
 			<div>
 				<p>- A celestial body orbiting the earth or another planet.</p>
@@ -48,43 +56,49 @@
 					collect information or for communication.</p>
 			</div>
 		</section>
-		<section>
-			<h2 class="text-center">How does it works ?</h2>
+		<section id="work">
+			<h2 class="text-center">How does it work ?</h2>
 			<div>
 				<p>Firstly, a satellite doesn't fly. It just fall constantly around the Earth. It's easy to explain : if
 					you throw a stone, it will follow a parabola which lead to
 					the ground, or if we want to be specific, to the center of Earth. When we reach a specific speed
-					defined by the distance satellite/earth (cf Kepler laws), the satellite will
+					defined by the distance satellite/earth (cf <a
+						href="https://www.sciencedirect.com/topics/engineering/keplers-law#:~:text=Kepler's%20laws%20apply%3A,the%20same%20for%20all%20planets."
+						target="blank">Kepler laws</a>), the satellite will
 					follow the curve of Earth. To avoid the satellite to fall while losing speed due to friction with
 					air particles, we need it to be over the atmosphere, where there is no
 					friction force. At this altitude, there is no need to use any energy to maintain his movement. For
 					example, the ISS which is close to earth, need every month to
 					use some air to go up and keep a good distance and speed due to friction.
 				</p>
-				<div>
+				<div class="img-ctn">
 					<p>
 						Secondly, I will explain differents orbits and how do they work <br>
 						Low Earth orbit (LEO) : Geocentric orbits ranging in altitude from 180 km – 2,000 km (1,200
-						mi).<br>
+						mi). <span class="info-schema">(Cyan on schema)</span><br>
 						Medium Earth orbit (MEO) : Geocentric orbits ranging in altitude from 2,000 km (1,200 mi) –
 						35,786
-						km (22,236 mi). Also known as an intermediate circular orbit.<br>
+						km (22,236 mi). Also known as an intermediate circular orbit. <span
+							class="info-schema">(Yellow)</span><br>
 						Geostationnary Earth Orbit (GEO) : Geocentric circular orbit with an altitude of 35,786
 						kilometres
 						(22,236 mi).
 						The period of the orbit equals one sidereal day, coinciding with the rotation period of the
 						Earth.
 						The speed is 3,075 metres per second (10,090 ft/s).
-						This orbit is used by communication & TV satellites.<br>
+						This orbit is used by communication & TV satellites. <span class="info-schema">(Black dashed
+							line)</span><br>
 						High Earth orbit (HEO): Geocentric orbits above the altitude of geosynchronous orbit 35,786 km
-						(22,236 mi).
+						(22,236 mi).<br>
+						<span class="info-schema">The green dash-dot line is the orbit of GPS satellites, and the red
+							dotted line is the orbit of ISS</span>
 					</p>
 					<img src="sources/orbits.png" alt="Schema of differents orbits">
 				</div>
 			</div>
 		</section>
-		<section>
-			<h2>Project Starlink</h2>
+		<section id="starlink">
+			<h2 class="text-center">Project Starlink</h2>
 			<h3>Explanation</h3>
 			<div>
 				<p>The project Starlink's purpose is to grant access to Internet for everyone, everywhere on Earth.
@@ -106,7 +120,7 @@
 			</div>
 			<h3>Controversy & problems</h3>
 			<div>
-				<div>
+				<div class="img-ctn">
 					<p>Firstly, despite Musk’s initial assurances that the satellites will be barely noticeable, the
 						train of spacecraft has been captured marching across skies around the globe, and some online
 						tracking services can even calculate when and where someone can spot them sailing by overhead.
@@ -114,13 +128,11 @@
 					<img src="sources/starlink.png" alt="Starlink constellation visible on space">
 				</div>
 				<p>Astronomers have also raised concerns about the constellations’ effect on ground-based astronomy and
-					how the minifridge-size satellites will add to an already jammed orbital environment.</p>
-				<p>
+					how the minifridge-size satellites will add to an already jammed orbital environment.<br>
 					Like the Iridium satellites that preceded them, Starlink satellites can sometimes “flare” if their
 					solar arrays are angled just right to throw a burst of reflected sunlight toward Earth, briefly
-					boosting their apparent brightness to potentially rival Venus or Jupiter.
-				</p>
-				<p>And even these revised estimates, which are based on the satellite’s final orbital altitudes and
+					boosting their apparent brightness to potentially rival Venus or Jupiter. <br>
+					And even these revised estimates, which are based on the satellite’s final orbital altitudes and
 					inclinations, suggest that they’ll be visible to unaided eyes from very dark sites.</p>
 				<p>
 					However, despite his initial insistence that Starlink’s components will be invisible and
@@ -144,8 +156,8 @@
 					into orbit.</p>
 			</div>
 		</section>
-		<section>
-			<h2>Militarisation of space</h2>
+		<section id="militarisation">
+			<h2 class="text-center">Militarisation of space</h2>
 			<div>
 				<p>The militarisation of space involves the placement and development of weaponry and military
 					technology in outer space. The early exploration of space in the mid-20th century had, in part, a
@@ -170,7 +182,8 @@
 				</p>
 				<p>The year after the first satellite was launch, URSS tried to destroy one satellite with an
 					earth-space missile, they missed but they were satisfied about this launch</p>
-				<p>Nowadays, 4 country have already destroyed a satellite like that : China, USA, Russia & India</p>
+				<p>Nowadays, 4 country have already destroyed a satellite with an earth-space missile : China, USA,
+					Russia & India</p>
 				<p>However, destroying satellites with missile cause a big problem : there is many debris which stay in
 					space, which can cause many problems to others satellites, or more recently
 					the ISS's astronauts must cancel an outside mission because of debris caused by the destruction of a
@@ -178,18 +191,18 @@
 				</p>
 			</div>
 		</section>
-		<section>
-			<h2>Spatial debris & ecology</h2>
+		<section id="ecology">
+			<h2 class="text-center">Spatial debris & ecology</h2>
 			<div>
-				<div>
+				<div class="img-ctn">
 					<p>Since 1957, the begining of space age, tons of launchers, vehicles and instuments has been sent
 						into space. We had no relative informations about what to do with this objects at the end of
 						their lives. We decided to ignore it and let them derive into space.
 						Their number keep increasing, which cause many explosions and collisions, creating bilions of
 						spatial debris.
-						<img src="sources/Distribution_of_space_debris_around_Earth.gif"
-							alt="Modelisation of spatial debris around earth, gif">
 					</p>
+					<img src="sources/Distribution_of_space_debris_around_Earth.gif"
+						alt="Modelisation of spatial debris around earth, gif">
 				</div>
 				<p>For these reasons, some law appeared to ensure that we will reduce space debris. Formerly, we did
 					use all the fuel and when there was no fuel left, we just left it where it was. <br>
@@ -199,11 +212,11 @@
 				</p>
 				<p>There is a list of international norms & directives to follow :</p>
 				<ul>
-					<li>Build launchers and space vehicle to avoid them to lose parts (when launch and during his
+					<li>- Build launchers and space vehicle to avoid them to lose parts (when launch and during his
 						operation)</li>
-					<li>Prevent explosion while liberating energy, to be sure a vehicle becomes passiv</li>
-					<li>When a mission is over, use the last fuel to quit orbits</li>
-					<li>Avoid collisions in space while chosing conscientiously their orbits and performing avoiding
+					<li>- Prevent explosion while liberating energy, to be sure a vehicle becomes passiv</li>
+					<li>- When a mission is over, use the last fuel to quit orbits</li>
+					<li>- Avoid collisions in space while chosing conscientiously their orbits and performing avoiding
 						collisions process </li>
 				</ul>
 				<p>Actually, there is approximatively 9 600 tons of debris, 36 500 are more than 10cm, 1 million are
