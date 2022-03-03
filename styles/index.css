@@ -10,35 +10,26 @@ p, a, li, ul {
     font-family: 'Nunito Sans',sans-serif;
 }
 
-main {
-    padding:10px;
-}
-
-main section {
-    margin-bottom: 15px;
-}
-
 main .description  p {
     margin-bottom: 0px;
 }
 
-main section .img-ctn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+main p .space {
+    padding-right: 25px;
 }
 
-main #work figure {
+main .schema-ctn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .schema-ctn div {
+    background-color: rgba(125, 125, 125, 0.9);
     width: 300px;
 }
 
-main #work img {
+main .small-img {
     width: 300px;
 }
 
@@ -46,14 +37,34 @@ main .info-schema {
     font-weight: bold;
 }
 
-main #starlink .img-ctn {
-    padding: 10px 0px;
+main .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .flex img {
+    margin-left: 10px;
+}
+
+main #work,
+main #militarisation {
+    padding-bottom: 0px !important;
+}
+
+main #starlink {
+    padding-top: 15px !important;
 }
 
 main #starlink img {
     width: 350px;
 }
 
-main section:last-of-type .img-ctn {
-    padding: 10px 0px;
+main #starlink h3 {
+    text-decoration: underline;
+    margin: 15px 0px;
+}
+
+main section:last-of-type img {
+    margin-bottom: 15px;
 }
