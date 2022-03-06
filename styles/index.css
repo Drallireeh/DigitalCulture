@@ -6,6 +6,10 @@ h1, h2 {
     font-weight: bold !important;
 }
 
+h2 {
+    margin-bottom: 15px !important;
+}
+
 p, a, li, ul {
     font-family: 'Nunito Sans',sans-serif;
 }
@@ -67,4 +71,5 @@ main #starlink h3 {
 
 main section:last-of-type img {
     margin-bottom: 15px;
+    max-width: 100%;
 }
