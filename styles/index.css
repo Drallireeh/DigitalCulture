@@ -51,6 +51,10 @@ main .flex img {
     margin-left: 10px;
 }
 
+main #work p:last-of-type {
+    line-height: 2rem;
+}
+
 main #work,
 main #militarisation {
     padding-bottom: 0px !important;
