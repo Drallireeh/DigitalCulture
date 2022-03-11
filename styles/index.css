@@ -23,9 +23,15 @@ main p .space {
 }
 
 main .schema-ctn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 main .schema-ctn div {
@@ -42,9 +48,15 @@ main .info-schema {
 }
 
 main .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 main .flex img {
@@ -76,4 +88,24 @@ main #starlink h3 {
 main section:last-of-type img {
     margin-bottom: 15px;
     max-width: 100%;
+}
+
+footer {
+    --darkreader-bg--bs-bg-opacity: 1;
+    background-color: rgb(39, 41, 40) !important;
+    --darkreader-text--bs-text-opacity: 1;
+    color: rgb(229, 224, 216) !important;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack: flex;
+        -ms-flex-pack: flex;
+            justify-content: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
